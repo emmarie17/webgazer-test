@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<title>
+		</title>
+		<style>
+			body { font-family:Calibri; font-size:12pt }
+			p { margin:0pt }
+@media (max-width: 900px) { 
+img { 
+   max-width: 100%;
+   height: auto;
+}
+
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+}	
+
+
+		</style>
+	</head>
+	<body>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&lt;!DOCTYPE html&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&lt;html lang="en"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&lt;head&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0; </span><span style="font-family:Helvetica">&lt;meta charset="UTF-8"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0; </span><span style="font-family:Helvetica">&lt;title&gt;WebGazer Calibration Demo&lt;/title&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0; </span><span style="font-family:Helvetica">&lt;script src="https://cdn.jsdelivr.net/gh/brownhci/WebGazer@latest/build/webgazer.js"&gt;&lt;/script&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0; </span><span style="font-family:Helvetica">&lt;style&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">body {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">margin: 0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">background: #111;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">color: #fff;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">font-family: Arial, sans-serif;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">text-align: center;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">overflow: hidden;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">#calibration {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">position: fixed;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">top: 0; left: 0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">width: 100%; height: 100%;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">display: grid;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">grid-template-columns: repeat(3, 1fr);</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">grid-template-rows: repeat(3, 1fr);</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">.dot {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">width: 30px; height: 30px;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">border-radius: 50%;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">background: red;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">justify-self: center;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">align-self: center;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">cursor: pointer;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">#tracker {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">position: absolute;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">width: 20px; height: 20px;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">background: lime;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">border-radius: 50%;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">pointer-events: none;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">display: none;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0; </span><span style="font-family:Helvetica">&lt;/style&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&lt;/head&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&lt;body&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0; </span><span style="font-family:Helvetica">&lt;h1&gt;WebGazer Calibration Demo&lt;/h1&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0; </span><span style="font-family:Helvetica">&lt;p&gt;Click each red dot a few times to calibrate. Then look around the screen — the green dot should follow your gaze.&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0; </span><span style="font-family:Helvetica">&lt;div id="calibration"&gt;&lt;/div&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0; </span><span style="font-family:Helvetica">&lt;div id="tracker"&gt;&lt;/div&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0; </span><span style="font-family:Helvetica">&lt;script&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">// Prevent 405 errors: don’t save calibration data across sessions</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">webgazer.params.saveDataAcrossSessions = false;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">// Generate calibration dots</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">const calibration = document.getElementById("calibration");</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">for (let i = 0; i &lt; 9; i++) {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">const dot = document.createElement("div");</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">dot.className = "dot";</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">dot.addEventListener("click", () =&gt; {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">dot.style.background = "gray"; // mark as calibrated</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">});</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">calibration.appendChild(dot);</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">const tracker = document.getElementById("tracker");</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">// Start WebGazer</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">window.onload = function() {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">we</span>
+			</p>
+	<p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net" target="_blank" style="font-size:11px; color: #d0d0d0">Converted to HTML with WordToHTML.net</a></p>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"4581d6a58cf94e929fad52deda295622","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
